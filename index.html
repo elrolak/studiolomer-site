@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StudioLomer | Links</title>
+  <meta name="description" content="StudioLomer - Música con identidad propia." />
+  <style>
+    :root{
+      --bg1:#0b0b10;
+      --bg2:#141423;
+      --card:rgba(255,255,255,.06);
+      --card2:rgba(255,255,255,.10);
+      --text:#f3f4f6;
+      --muted:rgba(243,244,246,.72);
+      --stroke:rgba(255,255,255,.10);
+      --shadow: 0 20px 60px rgba(0,0,0,.55);
+      --radius:22px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100svh;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(900px 500px at 20% 10%, rgba(123,97,255,.25), transparent 60%),
+        radial-gradient(900px 500px at 80% 0%, rgba(0,209,255,.20), transparent 55%),
+        radial-gradient(900px 600px at 50% 100%, rgba(255,0,128,.12), transparent 60%),
+        linear-gradient(180deg, var(--bg1), var(--bg2));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px 14px;
+    }
+    .wrap{width:min(560px, 100%);}
+    .card{
+      background:linear-gradient(180deg, var(--card), rgba(255,255,255,.03));
+      border:1px solid var(--stroke);
+      box-shadow:var(--shadow);
+      border-radius:var(--radius);
+      padding:22px;
+      backdrop-filter: blur(10px);
+    }
+    .top{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      margin-bottom:14px;
+    }
+    .avatar{
+      width:66px;height:66px;border-radius:18px;
+      background:linear-gradient(135deg, rgba(255,255,255,.18), rgba(255,255,255,.06));
+      border:1px solid var(--stroke);
+      display:grid;place-items:center;
+      overflow:hidden;
+      flex:0 0 auto;
+      font-weight:800;
+      letter-spacing:.5px;
+    }
+    .name{margin:0;font-size:22px;line-height:1.15}
+    .handle{margin:4px 0 0;color:var(--muted);font-size:14px}
+    .bio{
+      margin:10px 0 18px;
+      color:var(--muted);
+      font-size:14.5px;
+      line-height:1.5;
+      text-align:left;
+    }
+    .links{display:flex;flex-direction:column;gap:12px}
+    .btn{
+      text-decoration:none;
+      color:var(--text);
+      background:linear-gradient(180deg, var(--card2), rgba(255,255,255,.05));
+      border:1px solid var(--stroke);
+      border-radius:18px;
+      padding:14px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      transition:.12s ease;
+    }
+    .btn:hover{transform: translateY(-1px); border-color: rgba(255,255,255,.22)}
+    .left{display:flex;align-items:center;gap:12px}
+    .icon{
+      width:40px;height:40px;border-radius:14px;
+      border:1px solid var(--stroke);
+      background:rgba(0,0,0,.25);
+      display:grid;place-items:center;
+      flex:0 0 auto;
+    }
+    .label strong{font-size:15px}
+    .label span{font-size:12.5px;color:var(--muted)}
+    .arrow{color:rgba(243,244,246,.65);font-size:18px}
+    footer{
+      margin-top:14px;
+      text-align:center;
+      color:rgba(243,244,246,.55);
+      font-size:12px;
+    }
+    .pill{
+      display:inline-flex;gap:8px;align-items:center;
+      border:1px solid var(--stroke);
+      background:rgba(255,255,255,.04);
+      padding:8px 12px;border-radius:999px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+
+      <div class="top">
+        <div class="avatar">SL</div>
+        <div>
+          <h1 class="name">StudioLomer</h1>
+          <p class="handle">@StudioLomer</p>
+        </div>
+      </div>
+
+      <p class="bio">
+        <strong>Bienvenidos a StudioLomer.</strong><br>
+        Donde cada nota tiene propósito,  
+        cada sonido cuenta una historia,  
+        y cada canción nace para dejar huella.
+      </p>
+
+      <nav class="links">
+
+        <!-- TikTok -->
+        <a class="btn" href="https://www.tiktok.com/@studiolomer" target="_blank" rel="noopener">
+          <div class="left">
+            <div class="icon">🎵</div>
+            <div class="label">
+              <strong>TikTok</strong>
+              <span>Contenido y previews</span>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+
+        <!-- YouTube -->
+        <a class="btn" href="https://www.youtube.com/@StudioLomer" target="_blank" rel="noopener">
+          <div class="left">
+            <div class="icon">▶️</div>
+            <div class="label">
+              <strong>YouTube</strong>
+              <span>Videoclips y lanzamientos</span>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+
+        <!-- Spotify -->
+        <a class="btn" href="https://open.spotify.com/user/rolando.mendoza26379?si=RKSq53K8RgGxSDGDMhmJLw" target="_blank" rel="noopener">
+          <div class="left">
+            <div class="icon">🎧</div>
+            <div class="label">
+              <strong>Spotify</strong>
+              <span>Escucha nuestras canciones</span>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+
+        <!-- Instagram -->
+        <a class="btn" href="https://www.instagram.com/studiolomer/" target="_blank" rel="noopener">
+          <div class="left">
+            <div class="icon">📷</div>
+            <div class="label">
+              <strong>Instagram</strong>
+              <span>Noticias del estudio</span>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+
+        <!-- Facebook -->
+        <a class="btn" href="https://www.facebook.com/studiolomer" target="_blank" rel="noopener">
+          <div class="left">
+            <div class="icon">📘</div>
+            <div class="label">
+              <strong>Facebook</strong>
+              <span>Comunidad StudioLomer</span>
+            </div>
+          </div>
+          <div class="arrow">›</div>
+        </a>
+
+      </nav>
+
+      <footer>
+        <span class="pill">© 2026 StudioLomer</span>
+      </footer>
+
+    </section>
+  </main>
+</body>
+</html>
